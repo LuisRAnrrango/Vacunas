@@ -42,14 +42,18 @@ public class controlador extends HttpServlet {
         try (PrintWriter out = response.getWriter()) {
             List<FacTabEmpleado> lista = facTabEmpleadoFacade.findAll();
           
-            //Obtengo valores del Jsp
+            //Obtengo valores del Jsp Registro
             String cedula=request.getParameter("cedula");
             String nombres=request.getParameter("nombres");
             String apellidos=request.getParameter("apellidos");
             String correo=request.getParameter("correo");
              //llamada a la entidad empleado
              FacTabEmpleado   e;
-             
+            //Obtengo datos del JSP login
+            String usuario= request.getParameter("usuario");
+            String clave= request.getParameter("clave");
+            String rol= request.getParameter("item");
+      
            
     
          
@@ -66,6 +70,11 @@ public class controlador extends HttpServlet {
               facTabEmpleadoFacade.create(e);
             request.setAttribute("listaEmpleados", lista);
             request.getRequestDispatcher("IndexEmpleados.jsp").forward(request, response);
+         case "Iniciar":
+         
+           request.getRequestDispatcher("IndexEmpleados.jsp").forward(request, response);
+            
+            
             
          default:
              out.println("Error no se direcciono bien");

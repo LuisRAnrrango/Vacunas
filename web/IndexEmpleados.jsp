@@ -10,7 +10,7 @@
 
 
 <!DOCTYPE html>
-<html>
+<html lang="es">
     <head>
 
         <meta charset="utf-8">
@@ -41,9 +41,9 @@
             <div class="bg-light border-right" id="sidebar-wrapper">
                 <div class="sidebar-heading">Sistema Web Farmaenlace</div>
                 <div class="list-group list-group-flush">
-                    <a href="index.html" class="list-group-item list-group-item-action bg-light">Inicio</a>
-                    <a href="Categorias.jsp" class="list-group-item list-group-item-action bg-light">Categorias</a>
-                    <a href="Productos.jsp" class="list-group-item list-group-item-action bg-light">Productos</a>
+                    <a href="login.jsp" class="list-group-item list-group-item-action bg-light">Inicio</a>
+                 
+                    <a href="Productos.jsp" class="list-group-item list-group-item-action bg-light">Empleados</a>
                     <a href="#" class="list-group-item list-group-item-action bg-light">Contacto</a>
                     <a href="#" class="list-group-item list-group-item-action bg-light">Soporte</a>
                 </div>
@@ -66,7 +66,7 @@
                                 <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
                             </li>
                             <li class="nav-item active">
-                                <a class="nav-link" href="#">Iniciar Sesion <span class="sr-only">(current)</span></a>
+                                <a class="nav-link" href="login.jsp">Iniciar Sesion <span class="sr-only">(current)</span></a>
                             </li>
 
                         </ul>
@@ -116,7 +116,7 @@
                                 </div>
 
                             </div>
-                            <input type="submit" class="btn btn-success" name="btnRegistrar" name="guardar" value="Guardar"  >
+                            <input type="submit" class="btn btn-success" name="btnRegistrar" value="Guardar"  >
 
                             <a href="index.html" class="btn btn-danger">Cancelar</a>
                         </form><br>
@@ -128,7 +128,7 @@
 
 
                     <div class="col-md-12">
-                        <h1>Listado de Productos</h1>
+                        <h1>Listado de Empleados</h1>
                         <form name="frmBuscar" action="Productos.jsp" method="post">
                             <div class="form-group">
                                 <div class="form-inline">                                    
